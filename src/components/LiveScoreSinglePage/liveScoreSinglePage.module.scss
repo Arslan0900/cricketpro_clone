@@ -1,0 +1,302 @@
+@import "../css/variables";
+
+.News {
+    margin: 1.5rem 13.5vw 5rem 13.5vw;
+    display: flex;
+    // justify-content: center;
+    font-family: var(--font-family);
+    gap: 2rem;
+    // background-color: aqua;
+
+
+    & .News_box1 {
+        // background-color: rgb(134, 255, 182);
+        flex: 4;
+        overflow: hidden;
+
+        display: flex;
+        margin-top: 1rem;
+        border-radius: 0.6rem;
+        margin-bottom: 5rem;
+        // flex: 4;
+        // height: 66rem;
+        // background-color: aquamarine;
+        justify-content: baseline;
+        align-items: baseline;
+        flex-direction: column;
+
+        & .News_box1_drower {
+            background-color: #7fffd4;
+            display: none;
+            width: 100%;
+            height: 52rem;
+
+            margin-bottom: 1rem;
+            margin-top: 0.5rem;
+            
+
+        }
+
+        & .News_box1_drower_open {
+            display: flex;
+            // background-color: #7fffd4;
+            // display: none;
+            width: 100%;
+            // height: 52rem;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            margin-top: 0.5rem;
+            justify-content: space-between;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 1rem 0rem; 
+            // align-items: center;
+            // flex: 3;
+            & .News_box1_drower_card {
+                width: 100%;
+                background-color: var(--home-card-background);
+                height: 20rem;
+                border-radius: 0rem 0rem 0.5rem 0.5rem ;
+            }
+        }
+
+
+        & .headingBar {
+            width: 100%;
+            background-color: var(--home-card-background);
+            // height: 5rem;
+            border-radius: 0.6rem;
+            margin-bottom: 0.7rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // gap: 0.1rem;
+            // padding-left: 1rem;
+            font-family: var(--font-family);
+
+            // flex-wrap: wrap;
+            // overflow: hidden;
+            // font-size: 14px;
+            & .headingbar_button_box {
+
+                display: flex;
+                align-items: center;
+                margin: 1rem 2rem;
+                gap: 0.5rem;
+                // background-color: rgb(252, 255, 199);
+                // flex-wrap: wrap;
+                overflow: hidden;
+                // flex-wrap: hidden;
+
+                & .headingBar_btn {
+                    // background-color: aquamarine;
+
+                    // margin: 0rem 2rem;
+                    background-color: var(--Livescore-btn-background);
+                    font-size: 0.9rem;
+                    padding: 0.7rem;
+                    border-radius: 2rem;
+                    margin-bottom: 0.1rem;
+                    cursor: pointer;
+                    // &:hover {
+                    // background-color: aquamarine;
+                    // }
+                }
+
+                & .selected {
+                    background-color: var(--selected-btn-background);
+                    color: var(--selected-btn-clr);
+                }
+            }
+
+
+
+        }
+
+        & .news_box1_character_cards_box1 {
+            background-color: rgb(13, 0, 255);
+            height: 4rem;
+            width: 100%;
+            margin-bottom: 0.5rem;
+            border-radius: 0.6rem;
+            padding-top: 0.4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+
+            & .card_toggle_bar {
+                // background-color: #7fffd4;
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                margin: 0rem 2rem;
+
+                & .box_country_Name_box {
+                    color: white;
+                    font-size: 0.8rem;
+
+                }
+
+                & .box_div_down_icon {
+                    color: white;
+                    font-size: 1.4rem;
+
+                }
+            }
+
+        }
+
+        & .news_box1_character_cards_box2 {
+            background-color: rgb(13, 0, 255);
+            height: 4rem;
+            width: 100%;
+            margin-bottom: 0.5rem;
+            border-radius: 0.6rem;
+            padding-top: 0.4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            & .card_toggle_bar {
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                margin: 0rem 2rem;
+
+                & .box_country_Name_box {
+                    color: var(--text-clr);
+                    font-size: 0.8rem;
+                }
+
+                & .box_div_down_icon {
+                    color: var(--text-clr);
+                    font-size: 1.4rem;
+
+
+                }
+            }
+
+        }
+
+
+
+
+    }
+
+    & .News_box2 {
+        // width: 100%;
+        flex: 1;
+    }
+}
+
+//.....................desktop - 1280.......................//
+@include breakpoints ($max_w, $breakpoint-large) {
+    .News {
+        margin: 1.5rem 10vw 5rem 10vw;
+        gap: 1rem;
+
+        & .News_box1 {
+            & .headingBar {
+                & .headingbar_button_box {
+                    margin: 1rem 1rem;
+                    gap: 0.1rem;
+
+                    & .headingBar_btn {}
+
+                    & .selected {}
+                }
+            }
+
+            & .LiveScore_card {}
+
+            & .news_box1_character_cards1 {
+                & .card_toggle_bar {
+                    & .box_country_Name_box {}
+
+                    & .box_div_down_icon {}
+                }
+            }
+
+            & .news_box1_character_cards2 {}
+        }
+
+        & .News_box2 {
+            // display: none;
+        }
+    }
+}
+
+//.....................tablet - 1024.......................//
+@include breakpoints ($max_w, $breakpoint-medium) {
+    .News {
+        margin: 1.5rem 3vw 5rem 3vw;
+
+        & .News_box1 {
+            & .headingBar {
+                overflow: visible;
+
+                & .headingbar_button_box {
+                    overflow: visible;
+                    flex-wrap: wrap;
+                    margin: 1rem 1rem;
+
+                    & .headingBar_btn {}
+
+                    & .selected {}
+                }
+            }
+
+            & .LiveScore_card {}
+
+            & .news_box1_character_cards1 {
+                & .card_toggle_bar {
+                    & .box_country_Name_box {}
+
+                    & .box_div_down_icon {}
+                }
+            }
+
+            & .news_box1_character_cards2 {}
+        }
+
+        & .News_box2 {
+            display: none;
+        }
+    }
+
+}
+
+//.....................mobiles - 768.......................//
+@include breakpoints ($max_w, $breakpoint-small) {
+    .News {
+        & .News_box1 {
+            & .headingBar {
+                & .headingbar_button_box {
+                    & .headingBar_btn {}
+
+                    & .selected {}
+                }
+            }
+
+            & .LiveScore_card {}
+
+            & .news_box1_character_cards1 {
+                & .card_toggle_bar {
+                    & .box_country_Name_box {}
+
+                    & .box_div_down_icon {}
+                }
+            }
+
+            & .news_box1_character_cards2 {}
+        }
+
+        & .News_box2 {}
+    }
+}
+
+//.....................small-mobiles - 420.......................//
+@include breakpoints ($max_w, $breakpoint-Xsmall) {}

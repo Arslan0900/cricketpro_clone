@@ -1,0 +1,146 @@
+@import"../css/variables";
+ .Card_box {
+    display: flex;
+    // justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    // height: 22rem;
+    background-color: var(--home-card-background);
+    margin-bottom: 0.5rem;
+    border-radius: 0.6rem;
+    // padding: 1.2rem;
+    & .Card_box_subbox {
+        // background: aqua;
+        display: flex;
+        align-items: center;
+        // gap: 0.6rem;
+        width: 100%;
+        margin: 1.2rem;
+        // padding-bottom: 0.7rem;
+        & .Cardbox_subbox_btn {
+            padding: 0.4rem 0.6rem;
+            margin-left: 1rem;
+            font-family: var(--font-family);
+            // font-weight: bold;
+            font-size: 0.6rem;
+            background-color:var(--Livescore-btn-background) ;
+            border-radius: 1rem;
+            cursor: pointer;
+        }
+        & .selected {
+            background-color: var(--selected-btn-background);
+            color: var(--selected-btn-clr);
+        }
+    }
+    & .ranking_card_content_box {
+        width: 100%;
+        margin-bottom: 1rem; 
+        
+        & .tableContainer {
+            overflow-x: auto; // Make the table responsive
+          
+            .table {
+              width: 100%;
+              border-collapse: collapse;
+            //   border: 1px solid #d1d1d1;
+              border-radius: 4px;
+              & .thead_text {
+                // background-color: aqua;
+                display: flex;
+                padding-left:1rem ;
+
+              }
+              & .thead_text2 {
+                padding-right: 1rem;
+              }
+                
+              th {
+                // background-color: aqua;
+                font-family: var(--font-family);
+                font-size: 0.8rem;
+                font-weight: 500;
+              }
+          
+              td {
+                padding: 8px;
+              }
+          
+              .whiteRow {
+                background-color: var(--team-rank-score-bg-color);
+                & .table_display_data_div {
+                    display: flex;
+                    width: 7rem;
+                    // background-color: aqua;
+                    flex-wrap:  nowrap;
+                    justify-content: start;
+                    align-items: center;
+                }
+                & .img_span {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50px;
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    border: 1px solid var(--flag-boarder-clr);
+                    // padding: 0rem 1rem 0rem -1rem;
+                    // background-color: gray;
+                    margin:  0rem 0.4rem 0rem -0.4rem;
+
+                }
+                & .table_flag_img {
+                    width: 1rem;
+                    height: 1rem;
+                }
+              }
+          
+              .grayRow {
+                & .img_span {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50px;
+                    width: 2rem;
+                    height: 2rem;
+                    border: 1px solid rgb(168, 167, 167);
+                    // background-color: gray;
+
+                }
+                & .table_flag_img {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                }
+                
+              }
+            }
+          }
+          
+
+    }
+    // & .Card_subbox_matchesdata {
+    //     background: var(--card-subbox-background);
+    //     width: 100%;
+    //     height: 5rem;
+    //     border-radius: 0.5rem;
+    //     margin-bottom: 0.3rem;
+
+    // }
+    & .card_btn {
+        // background-color: aqua;
+        margin-bottom: 1rem;
+        font-family: var(--font-family);
+        font-size: 0.8rem;
+        border-bottom: 1px solid black;
+        cursor: pointer;
+    }
+    
+}
+@include breakpoints ($max_w, $breakpoint-medium) {
+    
+
+    .Card_box {
+            display: none;
+        }
+    
+
+}

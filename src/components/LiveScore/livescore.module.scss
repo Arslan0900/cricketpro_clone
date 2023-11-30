@@ -1,0 +1,211 @@
+@import "../css/variables";
+
+.LiveScore {
+    font-family: var(--font-family);
+    font-size: 16px;
+    // font-weight: 600;
+    // background: var(--bg-color);
+    padding: 1rem 0rem;
+    margin: 0px 13.5vw;
+    display: flex;
+    justify-content: space-between;
+    // background-color: aqua;
+    align-items: flex-start;
+    gap: 2rem;
+
+    & .Box1 {
+        display: flex;
+        margin-top: 1rem;
+        border-radius: 0.6rem;
+        margin-bottom: 5rem;
+        flex: 4;
+        // height: 66rem;
+        // background-color: aquamarine;
+        justify-content: baseline;
+        align-items: baseline;
+        flex-direction: column;
+
+        & .headingBar {
+            width: 100%;
+            background-color: var(--home-card-background);
+            height: 5rem;
+            border-radius: 0.6rem;
+            margin-bottom: 0.7rem;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            // gap: 0.1rem;
+            // padding-left: 1rem;
+            font-family: var(--font-family);
+
+            // font-size: 14px;
+            & .headingbar_button_box {
+                display: flex;
+                align-items: center;
+                margin: 0rem 2rem;
+                gap: 1rem;
+            flex-wrap: wrap;
+
+
+                & .headingBar_btn {
+                    // margin: 0rem 2rem;
+                    font-size: 0.9rem;
+                    background-color: var(--Livescore-btn-background);
+                    padding: 0.7rem;
+                    border-radius: 2rem;
+                    cursor: pointer;
+                    // &:hover {
+                    //     // background-color: aquamarine;
+                    // }
+                }
+
+                & .selected {
+                    background-color: var(--selected-btn-background);
+                    color: var(--selected-btn-clr);
+                }
+            }
+
+
+
+        }
+
+        & .LiveScore_card {
+            //    background-color: rgb(155, 92, 9);
+            width: 100%;
+        }
+    }
+
+    & .Box2 {
+        // background-color: aqua;
+        // flex: 1.5;
+        // & .rightbox {
+        width: 100%;
+        flex: 1;
+
+        // background-color: rgb(124, 81, 210);
+        // & .rightbox_box1 {
+        //     height: 22rem;
+        //     background-color: var(--home-card-background);
+        //     margin-bottom: 0.5rem;
+        //     border-radius: 0.6rem;
+        // }
+
+        // & .rightbox_box2 {
+        //     height: 22rem;
+        //     background-color: var(--home-card-background);
+        //     margin-bottom: 0.5rem;
+        //     border-radius: 0.6rem;
+        // }
+
+        // & .rightbox_box3 {
+        //     // height: 22rem;
+        //     // background-color: var(--home-card-background);
+        //     margin-bottom: 0.5rem;
+
+        //     & .rightbox_box3_subBox1 {
+        //         background-color: var(--home-card-background);
+        //         height: 4rem;
+        //         border-radius: 0.6rem;
+        //         margin-bottom: 0.5rem;
+        //     }
+
+        //     & .rightbox_box3_subBox2 {
+        //         background-color: var(--home-card-background);
+        //         height: 4rem;
+        //         border-radius: 0.6rem;
+        //         margin-bottom: 0.5rem;
+        //     }
+
+        //     & .rightbox_box3_subBox3 {
+        //         background-color: var(--home-card-background);
+        //         height: 4rem;
+        //         border-radius: 0.6rem;
+        //         margin-bottom: 0.5rem;
+        //     }
+
+
+        // }
+
+
+        // }
+
+    }
+}
+
+//.....................desktop - 1280.......................//
+@include breakpoints ($max_w, $breakpoint-large) {
+    .LiveScore {
+    margin: 0px 10vw;
+
+    }
+}
+
+//.....................tablet - 1024.......................//
+@include breakpoints ($max_w, $breakpoint-medium) {
+    .LiveScore {
+        margin: 0px 3vw;
+        & .Box1 {
+            & .headingBar {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                & .headingbar_button_box {
+                    margin: 0rem 0rem;
+                    gap: 2rem;
+                    // flex-wrap: wrap;
+
+                    & .headingBar_btn {
+                        // font-size: 0.9rem;
+                        // padding: 0.5rem;
+                        // border-radius: 2rem;
+
+                    }
+
+                }
+            }
+        }
+
+        & .Box2 {
+            display: none;
+            
+        }
+    }
+}
+
+//.....................mobiles - 768.......................//
+@include breakpoints ($max_w, $breakpoint-small) {
+    .LiveScore {
+        & .Box1 {}
+        & .Box2 {}
+    }
+}
+
+//.....................small-mobiles - 420.......................//
+@include breakpoints ($max_w, $breakpoint-Xsmall) {
+    .LiveScore {
+
+        & .Box1 {
+            & .headingBar {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                & .headingbar_button_box {
+                    margin: 0rem 0rem;
+                    gap: 0.3rem;
+                    flex-wrap: wrap;
+
+                    & .headingBar_btn {
+                        font-size: 0.9rem;
+                        padding: 0.5rem;
+                        border-radius: 2rem;
+
+                    }
+
+                }
+            }
+        }
+    }
+
+}

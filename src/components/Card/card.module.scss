@@ -1,0 +1,25 @@
+.card { 
+    background-color: gray;
+    border-radius: 8px;
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 5px;
+    
+    & .card_image {
+
+        border-radius: 8px;
+    }
+    & .card_body {
+        // background-color: aqua;
+        margin-left: 5px;
+        margin-right: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    & .card_text {
+        
+
+    }
+}

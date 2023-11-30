@@ -1,0 +1,83 @@
+@import './components/css/variables';
+.App {
+//   // text-align: center;
+  background-color: var(--bg-color);
+//   // color:var(--para-clr) ;
+//   // margin-left: 0px;
+//   // margin-right: 100px;
+
+}
+.dark-theme {
+  --font-family:Verdana;
+  --nav-header-background:#16204c;
+  --nav-bg-clr:#061b79;
+  --navbar-box-clr:#2038a3;
+  --footer-background-color:#545454;
+  --carousel-text-clr:white;
+  --submenu-bg-clr:rgb(146, 146, 146);
+  --submenu-text-clr:rgb(255, 255, 255);
+  --nav-submenu-bg-clr:#4f4f4f;
+  --home-card-background:#dfdfdf;
+  --loading-btn-bg-clr:#0f63e1;
+  --loading-btn-hover-bg-clr:#120858;
+  --loading-btn-clr:#ffffff;
+  --nav-line-clr:#fff;
+  --bg-color:#939393;
+  --text-clr:#fff;
+  --hover-clr:red;
+  --Livescore-btn-background:#ffffff;
+  --selected-btn-background:#32CF8A;
+  --selected-btn-clr:#ffffff;
+  --card-subbox-background:#EFF0F5;
+  // --para-clr:#fff;
+  // --btn-bg-color:#5f99be;
+  // --btn-text-color:#5f99be;
+  // --bg-clr:#111b20;
+  // --nav-hover-color:#fff;
+  // --card-clr:#333;
+
+}
+.light-theme {
+  --nav-header-background:#203CB6;
+  --nav-bg-clr:#2647D6;
+  --navbar-box-clr:#3A5AE5;
+  --hover-clr:rgb(239, 237, 237);
+  --footer-background-color:#32313F;
+  --submenu-bg-clr:white;
+  --submenu-text-clr:black;
+  --nav-submenu-bg-clr:#ffffff;
+  --nav-submenu-clr:#000000;
+  --carousel-matchStatus-text-clr: #777777;
+  --carousel-text-clr: #000000;
+  --home-card-background:#ffffff;
+  --text-clr: #ffffff;
+  --text-clr2:rgb(139, 138, 138);
+  --loading-btn-bg-clr:#16f494;
+  --loading-btn-hover-bg-clr:#20b977;
+  --loading-btn-clr:#ffffff;
+  --Livescore-btn-background:#EFF0F5;
+  --selected-btn-background:#32CF8A;
+  --selected-btn-clr:#ffffff;
+  --card-subbox-background:#EFF0F5;
+  --team-rank-score-bg-color:#F6F7FB;
+  --carousel-flag-bg-clr:#dedfe5;
+  --flag-boarder-clr:rgb(161, 161, 161);
+  --flag-clr:rgb(139, 138, 138);
+  --crousaele-last-line-bg-clr:#dedfe5;
+  // --para-clr:#000000;
+  --font-family:Verdana;
+  // --btn-bg-color:#111b20;
+  // --btn-text-color:#FFFFFF;
+  // --bg-clr:#ffffff;
+  // --nav-hover-color:rgb(0, 42, 255);
+  --bg-color:#EFF0F5; 
+  // --card-clr:#FFFFFF;
+  // --card-clr:linear-gradient(319deg, #dbf26e 0%, #61fa74 37%, #1cfdd6 100%);
+
+
+}
+// background-color: #ebf928;
+// background-image: linear-gradient(315deg, #ebf928 0%, #d425b5 74%);
+// background-color: #dbf26e;
+// background-image: linear-gradient(319deg, #dbf26e 0%, #61fa74 37%, #1cfdd6 100%);
+

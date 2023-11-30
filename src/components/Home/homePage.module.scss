@@ -1,0 +1,160 @@
+@import "../css/variables";
+
+// .loading {
+//     margin: 0px 13.5vw;
+// }
+
+.main_div_home_page {
+    font-family: var(--font-family);
+    font-size: 16px;
+    // font-weight: 600;
+    // background: var(--bg-color);
+    padding: 1rem 0rem;
+    margin: 0px 13.5vw;
+    display: flex;
+    justify-content: space-between;
+    // background-color: aqua;
+    align-items: flex-start;
+    gap: 2rem;
+
+    & .leftbox {
+        flex: 1.5;
+        width: 100%;
+
+    }
+
+    & .centerbox {
+        flex: 3;
+        width: 100%;
+
+        // & .live_Single_card {
+        //     width: 100%;
+        //     height: 10rem;
+        //     background-color: var(--home-card-background);
+        //     border-radius: 0.5rem;
+        //     margin-bottom: 1rem;
+        // }
+
+        // background-color: rgb(147, 196, 13);
+        & .centerbox_box1 {
+            // height: 25rem;
+            background-color: var(--home-card-background);
+            // background-color: red;
+            margin-bottom: 0.7rem;
+            border-radius: 0.6rem;
+            &:hover {
+                cursor: pointer;
+            }
+
+            & .center_box_image {
+                width: 100%;
+
+                //    background-color: aqua;
+                img {
+                    border-radius: 0.6rem 0.6rem 0rem 0rem;
+
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                
+            }
+
+            & .title {
+                padding: 1rem;
+                font-family: var(--font-family);
+                font-size: 0.9rem;
+                
+            }
+        }
+
+        & .loading_btn_box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2rem;
+            margin-bottom: 5rem;
+
+            & .load_more_btn {
+                cursor: pointer;
+                font-family: var(--font-family);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 8rem;
+                height: 2.5rem;
+                color: var(--loading-btn-clr);
+                background-color: var(--loading-btn-bg-clr);
+
+                &:hover {
+                    background-color: var(--loading-btn-hover-bg-clr);
+                }
+            }
+
+        }
+    }
+
+    & .rightbox {
+        width: 100%;
+        flex: 1.5;
+
+    }
+}
+
+//.....................desktop - 1280.......................//
+@include breakpoints ($max_w, $breakpoint-large) {
+    .main_div_home_page {
+        margin: 0px 10vw;
+
+
+        & .leftbox {}
+
+        & .centerbox {}
+
+        & .rightbox {}
+    }
+}
+
+//.....................tablet - 1024.......................//
+@include breakpoints ($max_w, $breakpoint-medium) {
+    .main_div_home_page {
+        margin: 0px 3vw;
+
+        & .leftbox {
+            display: none;
+        }
+
+        & .centerbox {}
+
+        & .rightbox {
+            display: none;
+
+
+        }
+    }
+
+}
+
+//.....................mobiles - 768.......................//
+@include breakpoints ($max_w, $breakpoint-small) {
+    .main_div_home_page {
+        & .leftbox {}
+
+        & .centerbox {}
+
+        & .rightbox {}
+    }
+
+}
+
+//.....................small-mobiles - 420.......................//
+@include breakpoints ($max_w, $breakpoint-Xsmall) {
+    .main_div_home_page {
+        & .leftbox {}
+
+        & .centerbox {}
+
+        & .rightbox {}
+    }
+
+}

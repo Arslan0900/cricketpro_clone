@@ -1,0 +1,78 @@
+@import "../css/variables";
+
+.News {
+    margin: 1.5rem 13.5vw 5rem 13.5vw;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    font-family: var(--font-family);
+    flex-wrap: wrap;
+    gap: 2rem;
+    // background-color: aqua;
+    & .Main_box {
+        background-color: aqua;
+        width: 15rem;
+        height: auto;
+        display: flex;
+        // justify-content: center;
+        // align-items: center;
+        flex-wrap: wrap;
+        // flex-direction: column;
+        background-color: var(--home-card-background);
+            // background-color: red;
+            margin-bottom: 0.7rem;
+            border-radius: 0.6rem;
+            &:hover {
+                cursor: pointer;
+            }
+        & .box_image {
+            width: 100%;
+            // height: 100%;
+
+                //    background-color: aqua;
+                img {
+                    border-radius: 0.6rem 0.6rem 0rem 0rem;
+
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+        }
+        & .title {
+            padding: 1rem;
+            font-family: var(--font-family);
+            font-size: 0.9rem;
+            
+        }
+    }
+
+
+    
+}
+
+//.....................desktop - 1280.......................//
+@include breakpoints ($max_w, $breakpoint-large) {
+    .News {
+        margin: 1.5rem 10vw 5rem 10vw;
+        gap: 1rem;
+    }
+        
+}
+
+//.....................tablet - 1024.......................//
+@include breakpoints ($max_w, $breakpoint-medium) {
+    .News {
+        margin: 1.5rem 3vw 5rem 3vw;
+
+    }
+
+}
+
+//.....................mobiles - 768.......................//
+@include breakpoints ($max_w, $breakpoint-small) {
+    .News {}
+       
+}
+
+//.....................small-mobiles - 420.......................//
+@include breakpoints ($max_w, $breakpoint-Xsmall) {}

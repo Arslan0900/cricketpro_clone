@@ -1,0 +1,142 @@
+@import"../css/variables";
+ .Card_box {
+    display: flex;
+    // justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    // height: 22rem;
+    background-color: var(--home-card-background);
+    margin-bottom: 0.5rem;
+    border-radius: 0.6rem;
+    padding: 1.2rem;
+    & .Card_box_subbox {
+        // background: aqua;
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        width: 100%;
+        padding-bottom: 0.7rem;
+        & .Cardbox_subbox_btn {
+            padding: 0.4rem;
+            font-family: var(--font-family);
+            // font-weight: bold;
+            font-size: 0.8rem;
+            background-color:var(--Livescore-btn-background) ;
+            border-radius: 1rem;
+            cursor: pointer;
+        }
+        & .selected {
+            background-color: var(--selected-btn-background);
+            color: var(--selected-btn-clr);
+        }
+    }
+    & .Card_subbox_matchesdata {
+        background: var(--card-subbox-background);
+        width: 100%;
+        height: 5rem;
+        border-radius: 0.5rem;
+        margin-bottom: 0.3rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & .Card_box_flag_box1 {
+            // background-color: aqua;
+            margin-left: 1rem;
+            & .card_flag_box {
+                // margin-right: 0.5rem;
+                // background-color: rgb(209, 159, 99);
+                display: flex;
+                flex-direction: column;
+                // justify-content: baseline;
+                align-items: center;
+
+                & .flag_img {
+                    border-radius: 15rem;
+                    background-color: var(--carousel-flag-bg-clr);
+                    border: 1px solid var(--flag-boarder-clr);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 2.2rem;
+                    height: 2.2rem;
+
+                    img {
+                        width: 1.6rem;
+                        height: 1.6rem;
+                    }
+                }
+
+                & .country_name {
+                    font-family: var(--font-family);
+                    font-size: 0.6rem;
+                    // padding: 0;
+                    margin-top: 0.5rem;
+                    // background-color: blueviolet;    
+                }
+            }
+        }
+        & .Card_box_time {
+            display: flex;
+            flex-direction: column;
+            font-size: 0.7rem;
+            // align-items: center;
+            & .first_span {
+                font-family: var(--font-family);
+                // display: none;
+            }
+            & .sec_span {
+                font-family: var(--font-family);
+                margin-top: 0.2rem;
+                color:var(--flag-clr);
+                // display: none;
+            }
+        }
+        & .Card_box_flag_box2 {
+            margin-right: 1rem;
+            & .card_flag_box {
+                // margin-right: 0.5rem;
+                // background-color: rgb(209, 159, 99);
+                display: flex;
+                flex-direction: column;
+                // justify-content: baseline;
+                align-items: center;
+
+                & .flag_img {
+                    border-radius: 15rem;
+                    background-color: var(--carousel-flag-bg-clr);
+                    border: 1px solid var(--flag-boarder-clr);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 2.2rem;
+                    height: 2.2rem;
+
+                    img {
+                        width: 1.6rem;
+                        height: 1.6rem;
+                    }
+                }
+
+                & .country_name {
+                    font-family: var(--font-family);
+                    font-size: 0.6rem;
+                    // padding: 0;
+                    margin-top: 0.5rem;
+                    // background-color: blueviolet;    
+                }
+            }
+
+        }
+
+    }
+    
+}
+@include breakpoints ($max_w, $breakpoint-medium) {
+    
+
+    .Card_box {
+            display: none;
+        }
+    
+
+}

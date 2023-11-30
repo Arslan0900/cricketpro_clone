@@ -1,0 +1,96 @@
+@import "../css/variables";
+
+.PopularNews_container {
+  background-color: var(--home-card-background);
+  border-radius: 0.5rem;
+  //   height: 22rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  //   justify-content: center;
+  align-items: center;
+  padding: 1.2rem 0rem;
+
+  & .popularNews {
+    margin: 0.3rem 0rem;
+    //   background-color: aqua;
+    width: 85%;
+    height: 5rem;
+    display: flex;
+    //   justify-content: center;
+    //   align-items: center;
+    overflow: hidden;
+    flex-wrap: nowrap;
+
+    & .image_box {
+      // margin: 1rem 1rem 0.5rem 1rem;
+      // background-color: aqua;
+      margin-right: 0.5rem;
+      width: 70%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        // height: 100%;
+      }
+    }
+
+    & .news_title {
+      width: 100%;
+      // margin: 1rem 1rem 1rem 0;
+      line-height: 1.2rem;
+      // background-color: aqua;
+      // margin: 0rem 0.3rem;
+      // color:var(--carousel-matchStatus-text-clr);
+      font-family: var(--font-family);
+      font-size: 0.7rem;
+      font-weight: bold;
+
+      // white-space: nowrap;
+      // overflow: hidden;
+      // text-overflow: ellipsis; // Add this property to allow the title to shrink on small screens.
+      & .news_span {
+        color: var(--text-clr2);
+        font-size: 0.7rem;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+
+// @import"../css/variables";
+
+//  .popularNews {
+//     background-color: var(--home-card-background);
+//     border-radius: 0.5rem;
+//     // height: 22rem;
+//     display: flex;
+//     overflow: hidden;
+//     flex-wrap: nowrap;
+//     & .image_box {
+//         margin: 1rem;
+//         background-color: aqua;
+//     }
+//     & .news_title {
+//         margin: 1rem 1rem 1rem 0rem;
+//         background-color: aqua;
+//         font-family: var(--font-family);
+//         font-size: 0.8rem;
+//         line-height: 1.1rem;
+//         display: flex;
+//         flex-direction: column;
+//         overflow: hidden;
+//         white-space: nowrap;
+//         width: 100%;
+//                         text-overflow: ellipsis;
+//         & .news_span {
+//             color: var(--text-clr2);
+//             font-size: 0.7rem;
+//         }
+
+
+//     }
+// }
