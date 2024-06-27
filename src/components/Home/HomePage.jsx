@@ -87,7 +87,7 @@ const HomePage = () => {
           return null;
         })}
 
-        {itemsToShow < Newsdata.length && (
+        {itemsToShow < newsData.length && ( // Newdata chnage it when you connect this with backend
           <div className={style.loading_btn_box}>
             <div className={style.load_more_btn} onClick={loadMore}>
               Load More

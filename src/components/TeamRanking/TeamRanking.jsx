@@ -1,11 +1,16 @@
 import React, { useState } from "react";
 import style from "./teamRanking.module.scss";
+import { useNavigate } from "react-router-dom";
 
 const TeamRanking = () => {
   const [selectedButton, setSelectedButton] = useState(0);
 
   const handleButtonClick = (index) => {
     setSelectedButton(index);
+  };
+  const Navigate = useNavigate();
+  const NavigateTONewspage = () => {
+    Navigate('/teams');
   };
   return (
     <>
@@ -60,7 +65,7 @@ const TeamRanking = () => {
                     <span className={style.img_span}>
                     <img
                       className={style.table_flag_img}
-                      src="https://demo.themeies.com/cricnotch/assets/images/flags/england.png"
+                      src="./images/pakistan.png"
                       alt="flag"
                     /></span>
                     <span>Pakistan</span>
@@ -73,7 +78,7 @@ const TeamRanking = () => {
                     <span className={style.img_span}>
                     <img
                       className={style.table_flag_img}
-                      src="https://demo.themeies.com/cricnotch/assets/images/flags/england.png"
+                      src="./images/india.png"
                       alt="flag"
                     /></span>
                     <span>India</span>
@@ -86,7 +91,7 @@ const TeamRanking = () => {
                     <span className={style.img_span}>
                     <img
                       className={style.table_flag_img}
-                      src="https://demo.themeies.com/cricnotch/assets/images/flags/england.png"
+                      src="./images/england.png"
                       alt="flag"
                     /></span>
                     <span>England</span>
@@ -99,7 +104,7 @@ const TeamRanking = () => {
                     <span className={style.img_span}>
                     <img
                       className={style.table_flag_img}
-                      src="https://demo.themeies.com/cricnotch/assets/images/flags/england.png"
+                      src="./images/england.png"
                       alt="flag"
                     /></span>
                     <span>Australia</span>
@@ -110,7 +115,7 @@ const TeamRanking = () => {
             </table>
           </div>
         </div>
-        <div className={style.card_btn}>See all stats</div>
+        <div className={style.card_btn} onClick={NavigateTONewspage}>See all stats</div>
       </div>
     </>
   );

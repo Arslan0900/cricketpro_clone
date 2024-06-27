@@ -6,7 +6,7 @@ import {  useNavigate } from "react-router-dom";
 const News = () => {
   const navigate = useNavigate()
   const navigatetosinglepage = (id) => {
-    navigate(`/LiveScoreNewsSinglePage/${id}`)
+    navigate(`/LiveScoreNewsSinglePage/${id}`) 
   }
   const Data = newsData;
   // console.log(Data);

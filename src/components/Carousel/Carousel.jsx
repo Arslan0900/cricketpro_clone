@@ -3,6 +3,7 @@ import style from "./carousel.module.scss";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 const CarouselPage = () => {
   const data = useSelector((state) => state.getApidata.apiData);
@@ -25,15 +26,20 @@ const CarouselPage = () => {
       items: 1,
     },
   };
+  const navigate = useNavigate();
+const navigateTosinglepage = () => {
+  navigate("/LiveScoreSinglePage/1");
+}; //
+
   return (
     <div className={style.Carousel}>
       <Carousel
         // swipeable={true}
-        //   draggable={false}
+          // draggable={false}
         // showDots={true}
         responsive={responsive}
         //   ssr={true} // means to render carousel on server-side.
-        // infinite={true}
+        infinite={true}
         // autoPlay={true}
         autoPlaySpeed={5000}
         // keyBoardControl={true}
@@ -52,14 +58,14 @@ const CarouselPage = () => {
         // itemClass="carousel-item-padding-40-px"
       >
         
-              <div className={style.carousel_card} >
+              <div className={style.carousel_card} onClick={navigateTosinglepage}  >
                  Live
                 <div className={style.carousel_card_score}>
                   <div className={style.carousel_card_score_team1}>
                     <div className={style.card_flag_box}>
                       <div className={style.flag_img}>
                         <img
-                          src="https://demo.themeies.com/cricnotch/assets/images/flags/england.png"
+                          src="./images/pakistan.png"
                           alt="flag"
                         />
                       </div>
@@ -86,7 +92,7 @@ const CarouselPage = () => {
                   <div className={style.card_flag_box}>
                       <div className={style.flag_img}>
                         <img
-                          src="https://demo.themeies.com/cricnotch/assets/images/flags/england.png"
+                          src="./images/india.png"
                           alt="flag"
                         />
                       </div>
@@ -99,14 +105,14 @@ const CarouselPage = () => {
                   India need 27 runs in 13 balls.
                 </div>
               </div>
-              <div className={style.carousel_card} >
+              <div className={style.carousel_card} onClick={navigateTosinglepage} >
                  Live
                 <div className={style.carousel_card_score}>
                   <div className={style.carousel_card_score_team1}>
                     <div className={style.card_flag_box}>
                       <div className={style.flag_img}>
                         <img
-                          src="https://demo.themeies.com/cricnotch/assets/images/flags/england.png"
+                          src="./images/england.png"
                           alt="flag"
                         />
                       </div>
@@ -133,7 +139,7 @@ const CarouselPage = () => {
                   <div className={style.card_flag_box}>
                       <div className={style.flag_img}>
                         <img
-                          src="https://demo.themeies.com/cricnotch/assets/images/flags/england.png"
+                          src="./images/india.png"
                           alt="flag"
                         />
                       </div>
@@ -146,14 +152,14 @@ const CarouselPage = () => {
                   India need 27 runs in 13 balls.
                 </div>
               </div>
-              <div className={style.carousel_card} >
+              <div className={style.carousel_card} onClick={navigateTosinglepage} >
                  Live
                 <div className={style.carousel_card_score}>
                   <div className={style.carousel_card_score_team1}>
                     <div className={style.card_flag_box}>
                       <div className={style.flag_img}>
                         <img
-                          src="https://demo.themeies.com/cricnotch/assets/images/flags/england.png"
+                          src="./images/england.png"
                           alt="flag"
                         />
                       </div>
@@ -180,7 +186,7 @@ const CarouselPage = () => {
                   <div className={style.card_flag_box}>
                       <div className={style.flag_img}>
                         <img
-                          src="https://demo.themeies.com/cricnotch/assets/images/flags/england.png"
+                          src="./images/pakistan.png"
                           alt="flag"
                         />
                       </div>
@@ -193,14 +199,14 @@ const CarouselPage = () => {
                   India need 27 runs in 13 balls.
                 </div>
               </div>
-              <div className={style.carousel_card} >
+              <div className={style.carousel_card} onClick={navigateTosinglepage} >
                  Live
                 <div className={style.carousel_card_score}>
                   <div className={style.carousel_card_score_team1}>
                     <div className={style.card_flag_box}>
                       <div className={style.flag_img}>
                         <img
-                          src="https://demo.themeies.com/cricnotch/assets/images/flags/england.png"
+                          src="./images/england.png"
                           alt="flag"
                         />
                       </div>
@@ -227,7 +233,7 @@ const CarouselPage = () => {
                   <div className={style.card_flag_box}>
                       <div className={style.flag_img}>
                         <img
-                          src="https://demo.themeies.com/cricnotch/assets/images/flags/england.png"
+                          src="./images/england.png"
                           alt="flag"
                         />
                       </div>
@@ -240,14 +246,14 @@ const CarouselPage = () => {
                   India need 27 runs in 13 balls.
                 </div>
               </div>
-              <div className={style.carousel_card} >
+              <div className={style.carousel_card} onClick={navigateTosinglepage} >
                  Live
                 <div className={style.carousel_card_score}>
                   <div className={style.carousel_card_score_team1}>
                     <div className={style.card_flag_box}>
                       <div className={style.flag_img}>
                         <img
-                          src="https://demo.themeies.com/cricnotch/assets/images/flags/england.png"
+                          src="./images/england.png"
                           alt="flag"
                         />
                       </div>
@@ -274,7 +280,7 @@ const CarouselPage = () => {
                   <div className={style.card_flag_box}>
                       <div className={style.flag_img}>
                         <img
-                          src="https://demo.themeies.com/cricnotch/assets/images/flags/england.png"
+                          src="./images/england.png"
                           alt="flag"
                         />
                       </div>
@@ -287,14 +293,14 @@ const CarouselPage = () => {
                   India need 27 runs in 13 balls.
                 </div>
               </div>
-              <div className={style.carousel_card} >
+              <div className={style.carousel_card} onClick={navigateTosinglepage} >
                  Live
                 <div className={style.carousel_card_score}>
                   <div className={style.carousel_card_score_team1}>
                     <div className={style.card_flag_box}>
                       <div className={style.flag_img}>
                         <img
-                          src="https://demo.themeies.com/cricnotch/assets/images/flags/england.png"
+                          src="./images/england.png"
                           alt="flag"
                         />
                       </div>
@@ -321,7 +327,7 @@ const CarouselPage = () => {
                   <div className={style.card_flag_box}>
                       <div className={style.flag_img}>
                         <img
-                          src="https://demo.themeies.com/cricnotch/assets/images/flags/england.png"
+                          src="./images/england.png"
                           alt="flag"
                         />
                       </div>
@@ -334,14 +340,14 @@ const CarouselPage = () => {
                   India need 27 runs in 13 balls.
                 </div>
               </div>
-              <div className={style.carousel_card} >
+              <div className={style.carousel_card} onClick={navigateTosinglepage} >
                  Live
                 <div className={style.carousel_card_score}>
                   <div className={style.carousel_card_score_team1}>
                     <div className={style.card_flag_box}>
                       <div className={style.flag_img}>
                         <img
-                          src="https://demo.themeies.com/cricnotch/assets/images/flags/england.png"
+                          src="./images/pakistan.png"
                           alt="flag"
                         />
                       </div>
@@ -368,7 +374,7 @@ const CarouselPage = () => {
                   <div className={style.card_flag_box}>
                       <div className={style.flag_img}>
                         <img
-                          src="https://demo.themeies.com/cricnotch/assets/images/flags/england.png"
+                          src="./images/england.png"
                           alt="flag"
                         />
                       </div>
@@ -494,7 +500,7 @@ export default CarouselPage;
 //     'Pakistan Women': 'https://demo.themeies.com/cricnotch/assets/images/flags/pakistan.png',
 //     'Bangladesh': 'https://demo.themeies.com/cricnotch/assets/images/flags/bangladesh.png',
 //     'Afghanistan': 'https://demo.themeies.com/cricnotch/assets/images/flags/afghanistan.png',
-//     'England': 'https://demo.themeies.com/cricnotch/assets/images/flags/england.png',
+//     'England': './images/england.png',
 //     'Netherlands': 'https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/313100/313136.logo.png',
 //     'New-zealand': 'https://demo.themeies.com/cricnotch/assets/images/flags/new-zealand.png',
 //     'South-africa': 'https://demo.themeies.com/cricnotch/assets/images/flags/south-africa.png',
@@ -573,7 +579,7 @@ export default CarouselPage;
 //           } = dataItems;
 //           return (
 //             <>
-//               <div  className={style.carousel_card} onClick={()=>navigatetosinglepage(id)}>
+//               <div  className={style.carousel_card} onClick={navigateTosinglepage} onClick={()=>navigatetosinglepage(id)}>
 //                 {/* {id} */}
 //                 <div className={style.carousel_card_match_stats}>
 //                   Live
@@ -623,7 +629,7 @@ export default CarouselPage;
 //                     <div className={style.card_flag_box}>
 //                       <div className={style.flag_img}>
 //                         <img
-//                           src="https://demo.themeies.com/cricnotch/assets/images/flags/england.png"
+//                           src="./images/england.png"
 //                           alt="flag"
 //                         />
 //                       </div>
@@ -650,7 +656,7 @@ export default CarouselPage;
 //                   <div className={style.card_flag_box}>
 //                       <div className={style.flag_img}>
 //                         <img
-//                           src="https://demo.themeies.com/cricnotch/assets/images/flags/england.png"
+//                           src="./images/england.png"
 //                           alt="flag"
 //                         />
 //                       </div>
@@ -680,7 +686,7 @@ export default CarouselPage;
 // //     <div className={style.card_flag_box}>
 // //       <div className={style.flag_img}>
 // //         <img
-// //           src="https://demo.themeies.com/cricnotch/assets/images/flags/england.png"
+// //           src="./images/england.png"
 // //           alt="flag"
 // //         />
 // //       </div>

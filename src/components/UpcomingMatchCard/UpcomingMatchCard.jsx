@@ -34,7 +34,7 @@ const UpcomingMatchCard = () => {
             <div className={style.card_flag_box}>
               <div className={style.flag_img}>
                 <img
-                  src="https://demo.themeies.com/cricnotch/assets/images/flags/england.png"
+                  src="./images/pakistan.png"
                   alt="flag"
                 />
               </div>
@@ -50,7 +50,7 @@ const UpcomingMatchCard = () => {
             <div className={style.card_flag_box}>
               <div className={style.flag_img}>
                 <img
-                  src="https://demo.themeies.com/cricnotch/assets/images/flags/england.png"
+                  src="./images/india.png"
                   alt="flag"
                 />
               </div>
@@ -63,7 +63,7 @@ const UpcomingMatchCard = () => {
             <div className={style.card_flag_box}>
               <div className={style.flag_img}>
                 <img
-                  src="https://demo.themeies.com/cricnotch/assets/images/flags/england.png"
+                  src="./images/england.png"
                   alt="flag"
                 />
               </div>
@@ -79,7 +79,7 @@ const UpcomingMatchCard = () => {
             <div className={style.card_flag_box}>
               <div className={style.flag_img}>
                 <img
-                  src="https://demo.themeies.com/cricnotch/assets/images/flags/england.png"
+                  src="./images/pakistan.png"
                   alt="flag"
                 />
               </div>
@@ -92,7 +92,7 @@ const UpcomingMatchCard = () => {
             <div className={style.card_flag_box}>
               <div className={style.flag_img}>
                 <img
-                  src="https://demo.themeies.com/cricnotch/assets/images/flags/england.png"
+                  src="./images/india.png"
                   alt="flag"
                 />
               </div>
@@ -108,7 +108,7 @@ const UpcomingMatchCard = () => {
             <div className={style.card_flag_box}>
               <div className={style.flag_img}>
                 <img
-                  src="https://demo.themeies.com/cricnotch/assets/images/flags/england.png"
+                  src="./images/england.png"
                   alt="flag"
                 />
               </div>

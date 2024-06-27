@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import style from "./teams.module.scss";
 import UpcomingMatchCard from "../UpcomingMatchCard/UpcomingMatchCard";
 import TeamRanking from "../TeamRanking/TeamRanking";
 import ReachUs from "../ReachUs/ReachUs";
 import { RiArrowDropDownLine } from "react-icons/ri";
+import { ScrollRestoration, useNavigate } from "react-router-dom";
 
 const Teams = () => {
   const [openDrower, setOpenDrower] = useState(true);
@@ -22,6 +23,14 @@ const Teams = () => {
     setOpenDrower(false);
   };
 
+  useEffect(() => {
+    window.scrollTo(0, 300);
+  }, [])
+  const navigate = useNavigate();
+  const navigateTo = () => {
+    navigate('/Livescore')
+  };
+
   return (
     <div className={style.News}>
       <div className={style.News_box1}>
@@ -31,7 +40,11 @@ const Teams = () => {
               className={`${style.headingBar_btn} ${
                 selectedButton === 0 ? style.selected : ""
               }`}
-              onClick={() => handleButtonClick(0)}
+              onClick={
+                () => {
+                  handleButtonClick(0);
+                  navigateTo();}
+              }
             >
               LIVE
             </div>
