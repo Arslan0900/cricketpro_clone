@@ -115,15 +115,43 @@ const Teams = () => {
             openDrower ? style.News_box1_drower_open : style.News_box1_drower
           }`}
         >
-          <div className={style.News_box1_drower_card}></div>
-          <div className={style.News_box1_drower_card}></div>
-          <div className={style.News_box1_drower_card}></div>
-          <div className={style.News_box1_drower_card}></div>
-          <div className={style.News_box1_drower_card}></div>
-          <div className={style.News_box1_drower_card}></div>
-          <div className={style.News_box1_drower_card}></div>
-          <div className={style.News_box1_drower_card}></div>
-          <div className={style.News_box1_drower_card}></div>
+          <div className={style.News_box1_drower_card}>
+            <img src="./images/dhoni.webp" alt="" />
+          </div>
+          <div className={style.News_box1_drower_card}>
+            <img src="./images/dhoni.webp" alt="" />
+          </div>
+          <div className={style.News_box1_drower_card}>
+            <img src="./images/dhoni.webp" alt="" />
+          </div>
+          <div className={style.News_box1_drower_card}>
+            <img src="./images/dhoni.webp" alt="" />
+          </div>
+          <div className={style.News_box1_drower_card}>
+            <img src="./images/dhoni.webp" alt="" />
+          </div>
+          <div className={style.News_box1_drower_card}>
+            <img src="./images/dhoni.webp" alt="" />
+          </div>
+          <div className={style.News_box1_drower_card}>
+            <img src="./images/dhoni.webp" alt="" />
+          </div>
+          <div className={style.News_box1_drower_card}>
+            <img src="./images/dhoni.webp" alt="" />
+          </div>
+          <div className={style.News_box1_drower_card}>
+            <img src="./images/dhoni.webp" alt="" />
+          </div>
+          <div className={style.News_box1_drower_card}>
+            <img src="./images/dhoni.webp" alt="" />
+          </div>
+          <div className={style.News_box1_drower_card}>
+            <img src="./images/dhoni.webp" alt="" />
+          </div>
+          <div className={style.News_box1_drower_card}>
+            <img src="./images/dhoni.webp" alt="" />
+          </div>
+          
         </div>
         <div
           className={style.news_box1_character_cards_box2}
@@ -143,15 +171,42 @@ const Teams = () => {
               : style.News_box1_drower
           }`}
         >
-          <div className={style.News_box1_drower_card}></div>
-          <div className={style.News_box1_drower_card}></div>
-          <div className={style.News_box1_drower_card}></div>
-          <div className={style.News_box1_drower_card}></div>
-          <div className={style.News_box1_drower_card}></div>
-          <div className={style.News_box1_drower_card}></div>
-          <div className={style.News_box1_drower_card}></div>
-          <div className={style.News_box1_drower_card}></div>
-          <div className={style.News_box1_drower_card}></div>
+           <div className={style.News_box1_drower_card}>
+            <img src="./images/dhoni.webp" alt="" />
+          </div>
+          <div className={style.News_box1_drower_card}>
+            <img src="./images/dhoni.webp" alt="" />
+          </div>
+          <div className={style.News_box1_drower_card}>
+            <img src="./images/dhoni.webp" alt="" />
+          </div>
+          <div className={style.News_box1_drower_card}>
+            <img src="./images/dhoni.webp" alt="" />
+          </div>
+          <div className={style.News_box1_drower_card}>
+            <img src="./images/dhoni.webp" alt="" />
+          </div>
+          <div className={style.News_box1_drower_card}>
+            <img src="./images/dhoni.webp" alt="" />
+          </div>
+          <div className={style.News_box1_drower_card}>
+            <img src="./images/dhoni.webp" alt="" />
+          </div>
+          <div className={style.News_box1_drower_card}>
+            <img src="./images/dhoni.webp" alt="" />
+          </div>
+          <div className={style.News_box1_drower_card}>
+            <img src="./images/dhoni.webp" alt="" />
+          </div>
+          <div className={style.News_box1_drower_card}>
+            <img src="./images/dhoni.webp" alt="" />
+          </div>
+          <div className={style.News_box1_drower_card}>
+            <img src="./images/dhoni.webp" alt="" />
+          </div>
+          <div className={style.News_box1_drower_card}>
+            <img src="./images/dhoni.webp" alt="" />
+          </div>
         </div>
       </div>
       <div className={style.News_box2}>
