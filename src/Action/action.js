@@ -15,7 +15,8 @@ export const setNewsData = (data) => ({
 
 export const fetchCricketData = () => async (dispatch) => {
   try {
-    const response = await axios.get("http://127.0.0.1:8000/api/live-cricket-score");
+    // const response = await axios.get("http://127.0.0.1:8000/api/live-cricket-score");
+    const response = await axios.get(""); //change when use api response
     // console.log(response.data);
     dispatch(setData(response.data));
     // console.log(response.data);
@@ -26,7 +27,8 @@ export const fetchCricketData = () => async (dispatch) => {
 
 export const fetchNewsData = () => async (dispatch) => {
   try {
-    const response = await axios.get("https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=76844f4fcbf945049d88364c309ee7fc");
+    // const response = await axios.get("https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=76844f4fcbf945049d88364c309ee7fc");
+    const response = await axios.get("");//change when use to fetch data from the API
     dispatch(setNewsData(response.data.articles));
     // console.log(response.data.articles);
   } catch (error) {

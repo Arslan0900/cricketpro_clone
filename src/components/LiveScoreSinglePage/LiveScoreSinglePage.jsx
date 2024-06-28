@@ -121,7 +121,7 @@ const LiveScoreSinglePage = () => {
                     <span className={style.img_span}>
                     <img
                       className={style.table_flag_img}
-                      src="https://demo.themeies.com/cricnotch/assets/images/flags/england.png"
+                      src="./images/england.png"
                       alt="flag"
                     /></span>
                     <span>Pakistan</span>
@@ -134,7 +134,7 @@ const LiveScoreSinglePage = () => {
                     <span className={style.img_span}>
                     <img
                       className={style.table_flag_img}
-                      src="https://demo.themeies.com/cricnotch/assets/images/flags/england.png"
+                      src="./images/pakistan.png"
                       alt="flag"
                     /></span>
                     <span>India</span>
@@ -147,7 +147,7 @@ const LiveScoreSinglePage = () => {
                     <span className={style.img_span}>
                     <img
                       className={style.table_flag_img}
-                      src="https://demo.themeies.com/cricnotch/assets/images/flags/england.png"
+                      src="./images/india.png"
                       alt="flag"
                     /></span>
                     <span>England</span>
@@ -160,7 +160,7 @@ const LiveScoreSinglePage = () => {
                     <span className={style.img_span}>
                     <img
                       className={style.table_flag_img}
-                      src="https://demo.themeies.com/cricnotch/assets/images/flags/england.png"
+                      src="./images/pakistan.png"
                       alt="flag"
                     /></span>
                     <span>Australia</span>

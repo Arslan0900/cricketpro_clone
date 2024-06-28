@@ -1,6 +1,7 @@
 import React from "react";
 import style from "./featuredVideo.module.scss";
 import Carousel from "react-multi-carousel";
+import { newsData } from "../Home/data";
 
 const FeaturedVideos = () => {
   const responsive = {
@@ -21,6 +22,7 @@ const FeaturedVideos = () => {
       items: 1,
     },
   };
+
   return (
     <>
       <p>Featured videos</p>
@@ -39,37 +41,18 @@ const FeaturedVideos = () => {
             autoPlay={true}
             autoPlaySpeed={3000}
           >
-            <div className={style.Carousel_item}>
-              <img
-                src="https://demo.themeies.com/cricnotch/assets/images/posts/2.jpg"
-                alt=""
-              />
-
-              <div className={style.Carousel_title}>
-                Strength to smarts:How Smith has levelled up{" "}
+            {newsData.slice(0, 5).map((item, index) => (
+              <div className={style.Carousel_item} key={index}>
+                <img
+                  src={item.urlToImage}
+                  alt={item.title}
+                />
+                <div className={style.Carousel_title}>
+                  {item.title}
+                </div>
+                <div className={style.Carousel_time}>{item.time}</div>
               </div>
-              <div className={style.Carousel_time}>20 hours ago</div>
-            </div>
-            <div className={style.Carousel_item}>
-              <img
-                src="https://demo.themeies.com/cricnotch/assets/images/posts/2.jpg"
-                alt=""
-              />
-              <div className={style.Carousel_title}>
-                Strength to smarts:How Smith has levelled up{" "}
-              </div>
-              <div className={style.Carousel_time}>20 hours ago</div>
-            </div>
-            <div className={style.Carousel_item}>
-              <img
-                src="https://demo.themeies.com/cricnotch/assets/images/posts/2.jpg"
-                alt=""
-              />
-              <div className={style.Carousel_title}>
-                Strength to smarts:How Smith has levelled up{" "}
-              </div>
-              <div className={style.Carousel_time}>20 hours ago</div>
-            </div>
+            ))}
           </Carousel>
         </div>
       </div>

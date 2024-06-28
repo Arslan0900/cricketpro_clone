@@ -28,7 +28,7 @@ const CarouselPage = () => {
   };
   const navigate = useNavigate();
 const navigateTosinglepage = () => {
-  navigate("/LiveScoreSinglePage/1");
+  navigate("/LiveScoreSinglePage");
 }; //
 
   return (
