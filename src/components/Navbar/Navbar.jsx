@@ -32,7 +32,7 @@ const Navbar = () => {
         <div className={styles.first_box}>
           <div className={styles.logo}>
             <Link to={"/"} onClick={closeMenu}>
-            <img src="https://demo.themeies.com/cricnotch/assets/images/logo.png" alt="logo" />
+            <img src="./images/logo.png" alt="logo" />
             </Link>
           </div>
           <div className={styles.avater}>

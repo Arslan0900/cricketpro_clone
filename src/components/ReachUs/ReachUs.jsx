@@ -6,9 +6,17 @@ const ReachUs = () => {
     <>
     <p>Reach us on</p>
         <div className={style.rightbox_box3}>
-          <div className={style.rightbox_box3_subBox1}></div>
-          <div className={style.rightbox_box3_subBox2}></div>
-          <div className={style.rightbox_box3_subBox3}></div>
+          <div className={style.rightbox_box3_subBox1}>
+            <img src="./images/facebook.svg" alt="" />
+          </div>
+          <div className={style.rightbox_box3_subBox2}>
+            <img src="./images/facebook.svg" alt="" />
+
+          </div>
+          <div className={style.rightbox_box3_subBox3}>
+            <img src="./images/facebook.svg" alt="" />
+
+          </div>
         </div>
     </>
   )
