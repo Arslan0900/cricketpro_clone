@@ -76,7 +76,7 @@ const Navbar = () => {
             </ul>
           </div>
           <div className={styles.nav_serch_bar}>
-            <input onClick={closeMenu} className={styles.input} type="search" placeholder="serch"  />
+            <input onClick={closeMenu} className={styles.input} type="search" placeholder="search"  />
             
           </div>
         </div>

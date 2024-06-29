@@ -35,7 +35,7 @@
 
                 & .button {
                     font-family: $font;
-                    background-color: #20B977;
+                    background-color: var(--loading-btn-bg-clr);
                     color: white;
                     margin-top: 40px;
                     padding: 20px 30px;
@@ -172,7 +172,7 @@
                     display: flex;
 
                     span {
-                        background-color: #20B977;
+                        background-color:var(--loading-btn-bg-clr);
                         width: 30%;
                         @include Displayflex($flex,$JustifyCenter,$alignCenter,0);
                         border-radius: 0px 8px 8px 0px;

@@ -8,7 +8,7 @@
     font-family: var(--font-family);
     font-size: 16px;
     // font-weight: 600;
-    // background: var(--bg-color);
+    background: var(--bg-color);
     padding: 1rem 0rem;
     margin: 0px 13.5vw;
     display: flex;
@@ -16,6 +16,8 @@
     // background-color: aqua;
     align-items: flex-start;
     gap: 2rem;
+    color: var(--text-clr);
+    
 
     & .leftbox {
         flex: 1.5;
@@ -42,6 +44,7 @@
             // background-color: red;
             margin-bottom: 0.7rem;
             border-radius: 0.6rem;
+            border: 2px solid var(--border-color);
             &:hover {
                 cursor: pointer;
             }
