@@ -1,14 +1,13 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from "react";
 import style from "./liveScoreSinglePage.module.scss";
-import { useParams } from 'react-router-dom';
-import UpcomingMatchCard from '../UpcomingMatchCard/UpcomingMatchCard';
-import TeamRanking from '../TeamRanking/TeamRanking';
-import ReachUs from '../ReachUs/ReachUs';
+import { useParams } from "react-router-dom";
+import UpcomingMatchCard from "../UpcomingMatchCard/UpcomingMatchCard";
+import TeamRanking from "../TeamRanking/TeamRanking";
+import ReachUs from "../ReachUs/ReachUs";
 import { RiArrowDropDownLine } from "react-icons/ri";
 
-
 const LiveScoreSinglePage = () => {
-    const [openDrower, setOpenDrower] = useState(true);
+  const [openDrower, setOpenDrower] = useState(true);
   const [openSecondDrower, setOpenSecondDrower] = useState(false);
   const [selectedButton, setSelectedButton] = useState(5);
   const handleButtonClick = (index) => {
@@ -23,6 +22,9 @@ const LiveScoreSinglePage = () => {
     setOpenSecondDrower(!openSecondDrower);
     setOpenDrower(false);
   };
+  useEffect(() => {
+    window.scrollTo(0, 250);
+  }, []);
 
   return (
     <div className={style.News}>
@@ -105,72 +107,83 @@ const LiveScoreSinglePage = () => {
           }`}
         >
           <div className={style.News_box1_drower_card}>
-          <div className={style.tableContainer}>
-            <table className={style.table}>
-              <thead>
-                <tr>
+            <div className={style.tableContainer}>
+              <table className={style.table}>
+                <thead>
+                  <tr>
                     <th></th>
-                  <th className={style.thead_text}>Team</th>
-                  <th className={style.thead_text2}>Points</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className={style.whiteRow}>
-                  <td>01.</td>
-                  <td className={style.table_display_data_div}>
-                    <span className={style.img_span}>
-                    <img
-                      className={style.table_flag_img}
-                      src="./images/england.png"
-                      alt="flag"
-                    /></span>
-                    <span>Pakistan</span>
-                  </td>
-                  <td>372</td>
-                </tr>
-                <tr style={{background:'white'}} className={style.whiteRow}>
-                  <td>02.</td>
-                  <td className={style.table_display_data_div}>
-                    <span className={style.img_span}>
-                    <img
-                      className={style.table_flag_img}
-                      src="./images/pakistan.png"
-                      alt="flag"
-                    /></span>
-                    <span>India</span>
-                  </td>
-                  <td>272</td>
-                </tr>
-                <tr className={style.whiteRow}>
-                  <td>03.</td>
-                  <td className={style.table_display_data_div}>
-                    <span className={style.img_span}>
-                    <img
-                      className={style.table_flag_img}
-                      src="./images/india.png"
-                      alt="flag"
-                    /></span>
-                    <span>England</span>
-                  </td>
-                  <td>272</td>
-                </tr>
-                <tr style={{background:'white'}} className={style.whiteRow}>
-                  <td>04.</td>
-                  <td className={style.table_display_data_div}>
-                    <span className={style.img_span}>
-                    <img
-                      className={style.table_flag_img}
-                      src="./images/pakistan.png"
-                      alt="flag"
-                    /></span>
-                    <span>Australia</span>
-                  </td>
-                  <td>272</td>
-                </tr>
-              </tbody>
-            </table>
+                    <th className={style.thead_text}>Team</th>
+                    <th className={style.thead_text2}>Points</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className={style.whiteRow}>
+                    <td>01.</td>
+                    <td className={style.table_display_data_div}>
+                      <span className={style.img_span}>
+                        <img
+                          className={style.table_flag_img}
+                          src="./images/england.png"
+                          alt="flag"
+                        />
+                      </span>
+                      <span>Pakistan</span>
+                    </td>
+                    <td>372</td>
+                  </tr>
+                  <tr
+                    style={{ background: "white" }}
+                    className={style.whiteRow}
+                  >
+                    <td>02.</td>
+                    <td className={style.table_display_data_div}>
+                      <span className={style.img_span}>
+                        <img
+                          className={style.table_flag_img}
+                          src="./images/pakistan.png"
+                          alt="flag"
+                        />
+                      </span>
+                      <span>India</span>
+                    </td>
+                    <td>272</td>
+                  </tr>
+                  <tr className={style.whiteRow}>
+                    <td>03.</td>
+                    <td className={style.table_display_data_div}>
+                      <span className={style.img_span}>
+                        <img
+                          className={style.table_flag_img}
+                          src="./images/india.png"
+                          alt="flag"
+                        />
+                      </span>
+                      <span>England</span>
+                    </td>
+                    <td>272</td>
+                  </tr>
+                  <tr
+                    style={{ background: "white" }}
+                    className={style.whiteRow}
+                  >
+                    <td>04.</td>
+                    <td className={style.table_display_data_div}>
+                      <span className={style.img_span}>
+                        <img
+                          className={style.table_flag_img}
+                          src="./images/pakistan.png"
+                          alt="flag"
+                        />
+                      </span>
+                      <span>Australia</span>
+                    </td>
+                    <td>272</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
-            </div>{/*this is the drower div*/}
+          {/*this is the drower div*/}
         </div>
         <div
           className={style.news_box1_character_cards_box2}
@@ -190,7 +203,81 @@ const LiveScoreSinglePage = () => {
               : style.News_box1_drower
           }`}
         >
-          <div className={style.News_box1_drower_card}></div>
+          <div className={style.News_box1_drower_card}>
+          <table className={style.table}>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th className={style.thead_text}>Team</th>
+                    <th className={style.thead_text2}>Points</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className={style.whiteRow}>
+                    <td>01.</td>
+                    <td className={style.table_display_data_div}>
+                      <span className={style.img_span}>
+                        <img
+                          className={style.table_flag_img}
+                          src="./images/england.png"
+                          alt="flag"
+                        />
+                      </span>
+                      <span>Pakistan</span>
+                    </td>
+                    <td>372</td>
+                  </tr>
+                  <tr
+                    style={{ background: "white" }}
+                    className={style.whiteRow}
+                  >
+                    <td>02.</td>
+                    <td className={style.table_display_data_div}>
+                      <span className={style.img_span}>
+                        <img
+                          className={style.table_flag_img}
+                          src="./images/pakistan.png"
+                          alt="flag"
+                        />
+                      </span>
+                      <span>India</span>
+                    </td>
+                    <td>272</td>
+                  </tr>
+                  <tr className={style.whiteRow}>
+                    <td>03.</td>
+                    <td className={style.table_display_data_div}>
+                      <span className={style.img_span}>
+                        <img
+                          className={style.table_flag_img}
+                          src="./images/india.png"
+                          alt="flag"
+                        />
+                      </span>
+                      <span>England</span>
+                    </td>
+                    <td>272</td>
+                  </tr>
+                  <tr
+                    style={{ background: "white" }}
+                    className={style.whiteRow}
+                  >
+                    <td>04.</td>
+                    <td className={style.table_display_data_div}>
+                      <span className={style.img_span}>
+                        <img
+                          className={style.table_flag_img}
+                          src="./images/pakistan.png"
+                          alt="flag"
+                        />
+                      </span>
+                      <span>Australia</span>
+                    </td>
+                    <td>272</td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
         </div>
       </div>
       <div className={style.News_box2}>
@@ -199,7 +286,7 @@ const LiveScoreSinglePage = () => {
         <ReachUs />
       </div>
     </div>
-    );
-}
+  );
+};
 
 export default LiveScoreSinglePage;

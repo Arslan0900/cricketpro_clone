@@ -14,10 +14,11 @@ const LiveScoreNewsSinglePage = () => {
 
   // Render the filtered data
   useEffect(() => {
-    window.scrollTo(0, 300);
+    window.scrollTo(0, 250);
   }, []);
   return (
     <div className={style.container}>
+      {console.log(filteredData)}
       {filteredData.length > 0 ? (
         <div key={filteredData[0].id} className={style.centerbox_box1}>
           {/* {item.author} */}
@@ -26,6 +27,7 @@ const LiveScoreNewsSinglePage = () => {
           </div>
           <h1 className={style.title}>{filteredData[0].title}</h1>
           <p>{filteredData[0].content}</p>{" "}
+          <p>{filteredData[0].description}</p>{" "}
           {/* Replace 'content' with the property you want to display */}
         </div>
       ) : (

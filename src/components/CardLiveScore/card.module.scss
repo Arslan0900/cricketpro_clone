@@ -56,7 +56,7 @@
                 justify-content: space-between;
 
                 & .vs_div {
-                    background-color: aquamarine;
+                    background-color: var(--selected-btn-background);
                     width: 2.5rem;
                     height: 2.5rem;
                     border-radius: 15rem;
@@ -241,6 +241,7 @@
             align-items: center;
 
             & .box_btn1 {
+                color: var(--text2-clr);
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -260,12 +261,15 @@
                 }
 
                 &.selected {
+                    
                     background-color: var(--selected-btn-background);
                     color: var(--selected-btn-clr);
                 }
             }
 
             & .box_btn2 {
+                color: var(--text2-clr);
+
                 display: flex;
                 justify-content: center;
                 align-items: center;

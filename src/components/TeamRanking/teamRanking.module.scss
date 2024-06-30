@@ -36,15 +36,16 @@
     & .ranking_card_content_box {
         width: 100%;
         margin-bottom: 1rem; 
-        
         & .tableContainer {
             overflow-x: auto; // Make the table responsive
           
             .table {
+              
               width: 100%;
               border-collapse: collapse;
-                background-color: var(--card-subbox-background);
-            //   border: 1px solid #d1d1d1;
+                background-color: var(--teamrank-card-subbox-background);
+                color :var(--text2-clr);
+              // border: 1px solid #d1d1d1;
               border-radius: 4px;
               & .thead_text {
                 display: flex;
@@ -53,6 +54,7 @@
               }
               & .thead_text2 {
                 padding-right: 1rem;
+                
               }
                 
               th {
@@ -104,7 +106,7 @@
                     width: 2rem;
                     height: 2rem;
                     border: 1px solid rgb(168, 167, 167);
-                    // background-color: gray;
+                    // background-color: red;
 
                 }
                 & .table_flag_img {

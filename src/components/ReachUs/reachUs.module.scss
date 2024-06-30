@@ -1,46 +1,47 @@
-@import"../css/variables";
- .rightbox_box3 {
-    // height: 22rem;
-    // background-color: var(--home-card-background);
+@import "../css/variables";
+.rightbox_box3 {
+  // height: 22rem;
+  // background-color: var(--home-card-background);
+  margin-bottom: 0.5rem;
+
+  & .rightbox_box3_subBox1 {
+    background-color: #1b76f2;
+    height: 4rem;
+    border-radius: 0.6rem;
     margin-bottom: 0.5rem;
-
-    & .rightbox_box3_subBox1 {
-        background-color: #1B76F2;
-        height: 4rem;
-        border-radius: 0.6rem;
-        margin-bottom: 0.5rem;
-        img {
-            padding-left: 6px;
-            width: 50px;
-            height: 100%;
-        }
-
-
+    img {
+      padding-left: 6px;
+      width: 50px;
+      height: 100%;
     }
+  }
 
-    & .rightbox_box3_subBox2 {
-        background-color: #1BA2EF;
-        height: 4rem;
-        border-radius: 0.6rem;
-        margin-bottom: 0.5rem;
-        img {
-            padding-left: 6px;
-            width: 50px;
-            height: 100%;
-        }
+  & .rightbox_box3_subBox2 {
+    background-color: #1ba2ef;
+    height: 4rem;
+    border-radius: 0.6rem;
+    margin-bottom: 0.5rem;
+    img {
+      // background-color: red;
+      padding-left: 6px;
+      width: 50px;
+      height: 100%;
+      object-fit: cover;
     }
+  }
 
-    & .rightbox_box3_subBox3 {
-        background-color: #0077B5;
-        height: 4rem;
-        border-radius: 0.6rem;
-        margin-bottom: 0.5rem;
-            img {
-            padding-left: 6px;
-            width: 50px;
-            height: 100%;
-        }
+  & .rightbox_box3_subBox3 {
+    background-color: #0077b5;
+    height: 4rem;
+    border-radius: 0.6rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    img {
+      padding-left: 6px;
+      width: 50px;
+      height: 90%;
+      object-fit: cover;
     }
-
-
+  }
 }

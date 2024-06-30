@@ -1,15 +1,21 @@
 import React, { useState } from "react";
 import style from "./card.module.scss";
+import { useNavigate } from "react-router-dom";
 
 const Card = (items) => {
   let item = items.data;
-  console.log(item);
+  // console.log(item);
   const [selectedSeriesButton, setSelectedSeriesButton] = useState(0);
   // console.log(selectedSeriesButton)
 
   const handleSeriesButtonClick = (index) => {
     setSelectedSeriesButton(index);
   };
+  const navigate = useNavigate();
+  const handlenavigate = () => {
+    navigate('/LiveScoreSinglePage');
+  };
+
 
   return (
     <>
@@ -70,7 +76,10 @@ const Card = (items) => {
               className={`${style.box_btn1} ${
                 selectedSeriesButton === 0 ? style.selected : ""
               }`}
-              onClick={() => handleSeriesButtonClick(0)}
+              onClick={
+                () =>{
+                  return (handleSeriesButtonClick(0),handlenavigate())}
+                }
             >
               LIVE SCORE
             </div>
@@ -78,7 +87,10 @@ const Card = (items) => {
               className={`${style.box_btn2} ${
                 selectedSeriesButton === 1 ? style.selected : ""
               }`}
-              onClick={() => handleSeriesButtonClick(1)}
+              onClick={
+                () =>{
+                  return (handleSeriesButtonClick(1),handlenavigate())}
+                }
             >
               SERIES HOME
             </div>

@@ -24,7 +24,7 @@ const Teams = () => {
   };
 
   useEffect(() => {
-    window.scrollTo(0, 300);
+    window.scrollTo(0, 250);
   }, [])
   const navigate = useNavigate();
   const navigateTo = () => {
