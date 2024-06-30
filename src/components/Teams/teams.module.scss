@@ -1,6 +1,7 @@
 @import "../css/variables";
 
 .News {
+    // color: white;
     margin: 1.5rem 13.5vw 5rem 13.5vw;
     display: flex;
     // justify-content: center;
@@ -195,6 +196,7 @@
 
     & .News_box2 {
         // width: 100%;
+        color: var(--text-clr);
         flex: 1;
     }
 }

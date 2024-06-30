@@ -2,6 +2,7 @@ import React from "react";
 import style from "./featuredVideo.module.scss";
 import Carousel from "react-multi-carousel";
 import { newsData } from "../Home/data";
+import { useNavigate } from "react-router-dom";
 
 const FeaturedVideos = () => {
   const responsive = {
@@ -23,6 +24,11 @@ const FeaturedVideos = () => {
     },
   };
 
+  const navigate = useNavigate()
+  const navigatetosinglepage = (id) => {
+   navigate(`/LiveScoreNewsSinglePage/${id}`)
+  } 
+
   return (
     <>
       <p>Featured videos</p>
@@ -42,7 +48,7 @@ const FeaturedVideos = () => {
             autoPlaySpeed={3000}
           >
             {newsData.slice(0, 5).map((item, index) => (
-              <div className={style.Carousel_item} key={index}>
+              <div className={style.Carousel_item} key={index} onClick={()=>navigatetosinglepage(item.author)}>
                 <img
                   src={item.urlToImage}
                   alt={item.title}

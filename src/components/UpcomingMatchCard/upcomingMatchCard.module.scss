@@ -24,7 +24,7 @@
             // font-weight: bold;
             font-size: 0.8rem;
             background-color:var(--Livescore-btn-background) ;
-            color: var(--text-clr);
+            color: var(--text2-clr);
             border-radius: 1rem;
             cursor: pointer;
         }
@@ -39,11 +39,11 @@
         height: 5rem;
         border-radius: 0.5rem;
         margin-bottom: 0.3rem;
-        display: none;
+        display: flex;
         justify-content: space-between;
         align-items: center;
         & .Card_box_flag_box1 {
-            background-color: aqua;
+            // background-color: aqua;
             margin-left: 1rem;
             & .card_flag_box {
                 // margin-right: 0.5rem;

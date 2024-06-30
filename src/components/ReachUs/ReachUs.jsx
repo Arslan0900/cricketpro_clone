@@ -10,11 +10,11 @@ const ReachUs = () => {
             <img src="./images/facebook.svg" alt="" />
           </div>
           <div className={style.rightbox_box3_subBox2}>
-            <img src="./images/facebook.svg" alt="" />
+            <img src="./images/twitter.png" alt="" />
 
           </div>
           <div className={style.rightbox_box3_subBox3}>
-            <img src="./images/facebook.svg" alt="" />
+            <img src="./images/Instagram.png" alt="" />
 
           </div>
         </div>

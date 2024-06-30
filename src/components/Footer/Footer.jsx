@@ -1,26 +1,34 @@
 import React from "react";
 import style from "./footer.module.scss";
 
-
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className={style.footer}>
       <div className={style.container}>
         <div className={style.box1}>
           <div className={style.box1_h2}>
             <h2>
-              Join our community by using our services and grow your business.
+              Stay updated with live scores of ongoing cricket matches and explore scores of past matches.
             </h2>
           </div>
           <div className={style.btn}>
-            <div className={style.button}>Try It For Free</div>
+            <div className={style.button} onClick={scrollToTop}>
+              up
+            </div>
           </div>
         </div>
         <div className={style.divider}></div>
         <div className={style.box2}>
           <div className={style.box2_sec1}>
             <div className={style.box2_sec1_icon}>
-              <img src="https://demo.themeies.com/cricnotch/assets/images/logo.png" alt="logo" />
+              <img src="./images/logo.png" alt="logo" />
             </div>
             <div className={style.box2_sec1_details}>
               <p>©copy right</p>

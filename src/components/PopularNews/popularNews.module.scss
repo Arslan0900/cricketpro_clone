@@ -12,8 +12,11 @@
   padding: 1.2rem 0rem;
 
   & .popularNews {
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
     margin: 0.3rem 0rem;
-    //   background-color: aqua;
+    cursor: pointer;
+      background-color: var(--card-subbox-background);
     width: 85%;
     height: 5rem;
     display: flex;

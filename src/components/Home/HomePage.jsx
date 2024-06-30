@@ -51,8 +51,11 @@ const HomePage = () => {
   // };
   const navigate = useNavigate()
   const navigatetosinglepage = (id) => {
-    navigate(`/LiveScoreNewsSinglePage/${id}`)
+   navigate(`/LiveScoreNewsSinglePage/${id}`)
   }
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []) 
   return (
     <div className={style.main_div_home_page}>
       <div className={style.leftbox}>
@@ -72,7 +75,7 @@ const HomePage = () => {
         
         {newsData.slice(0, itemsToShow).map((item, index) => {
           // Check if the 'urlToImage' is not null or undefined
-          if (item.urlToImage) {
+          if (item.urlToImage && item.author !== null) {
             return (
               <div key={item.id} className={style.centerbox_box1} onClick={()=>navigatetosinglepage(item.author)}>
                 {/* {item.author} */}

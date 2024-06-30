@@ -88,6 +88,7 @@ import React from "react";
 import style from "./popularNews.module.scss";
 import { useSelector } from "react-redux";
 import { newsData } from "../Home/data";
+import { useNavigate } from "react-router-dom";
 
 
 const PopularNews = () => {
@@ -101,6 +102,11 @@ const PopularNews = () => {
   const maxItemsToShow = 5;
   let itemsShown = 0;
 
+  const navigate = useNavigate()
+  const navigatetosinglepage = (id) => {
+   navigate(`/LiveScoreNewsSinglePage/${id}`)
+  } 
+
   return (
     <>
       <p>Popular News</p>
@@ -111,11 +117,12 @@ const PopularNews = () => {
             return null;
           }
 
-          if (news.urlToImage) {
+          if (news.urlToImage && news.author !== null ) {
             // Only count and render items with a valid 'urlToImage'.
             itemsShown++;
+            {console.log(news.author)}
             return (
-              <div key={news.id} className={style.popularNews}>
+              <div key={news.id} className={style.popularNews} onClick={()=>navigatetosinglepage(news.author)}>
                 <div className={style.image_box}>
                   <img src={news.urlToImage} alt="news" />
                 </div>

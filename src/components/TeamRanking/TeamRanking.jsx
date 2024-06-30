@@ -72,7 +72,7 @@ const TeamRanking = () => {
                   </td>
                   <td>372</td>
                 </tr>
-                <tr style={{background:'white'}} className={style.whiteRow}>
+                <tr style={{background:'lightgray'}} className={style.whiteRow}>
                   <td>02.</td>
                   <td className={style.table_display_data_div}>
                     <span className={style.img_span}>
@@ -98,7 +98,7 @@ const TeamRanking = () => {
                   </td>
                   <td>272</td>
                 </tr>
-                <tr style={{background:'white'}} className={style.whiteRow}>
+                <tr style={{background:'lightgray'}} className={style.whiteRow}>
                   <td>04.</td>
                   <td className={style.table_display_data_div}>
                     <span className={style.img_span}>

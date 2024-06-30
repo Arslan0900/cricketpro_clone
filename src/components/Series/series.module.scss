@@ -72,10 +72,13 @@
         & .LiveScore_card {
             //    background-color: rgb(155, 92, 9);
             width: 100%;
+            color: var(--text-clr);
         }
     }
 
     & .Box2 {
+        color: var(--text-clr);
+
         // background-color: aqua;
         // flex: 1.5;
         // & .rightbox {
