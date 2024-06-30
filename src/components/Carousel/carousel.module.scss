@@ -7,9 +7,10 @@
     color: var(--carousel-text-clr);
 
     & .carousel_card {
-        background: var(--bg-color);
+        background: var(--carousel-bg-color);
         height: 10rem;
         border-radius: 10px;
+        border: 2px solid var(--border-color);
         margin: 1rem 0;
         margin-right: 0.5rem;
         margin-left: 0.5rem;

@@ -8,6 +8,7 @@
     background-color: var(--home-card-background);
     margin-bottom: 0.5rem;
     border-radius: 0.6rem;
+    color: black;
     // padding: 1.2rem;
     & .Card_box_subbox {
         // background: aqua;
@@ -42,10 +43,10 @@
             .table {
               width: 100%;
               border-collapse: collapse;
+                background-color: var(--card-subbox-background);
             //   border: 1px solid #d1d1d1;
               border-radius: 4px;
               & .thead_text {
-                // background-color: aqua;
                 display: flex;
                 padding-left:1rem ;
 

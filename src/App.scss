@@ -8,27 +8,32 @@
 
 }
 .dark-theme {
+  --border-color:white;
   --font-family:Verdana;
-  --nav-header-background:#16204c;
-  --nav-bg-clr:#061b79;
-  --navbar-box-clr:#2038a3;
-  --footer-background-color:#545454;
+  --nav-header-background:#000000;
+  --nav-bg-clr:#000000;
+  --navbar-box-clr:#000000;
+  --footer-background-color:#000000;
   --carousel-text-clr:white;
   --submenu-bg-clr:rgb(146, 146, 146);
   --submenu-text-clr:rgb(255, 255, 255);
+  --nevbar-submenu-hover-clr:#0f63e1;
   --nav-submenu-bg-clr:#4f4f4f;
-  --home-card-background:#dfdfdf;
+  --home-card-background:#000000;
   --loading-btn-bg-clr:#0f63e1;
   --loading-btn-hover-bg-clr:#120858;
   --loading-btn-clr:#ffffff;
   --nav-line-clr:#fff;
-  --bg-color:#939393;
+  --bg-color:rgb(21, 17, 17);
+  --carousel-bg-color:#000000;
   --text-clr:#fff;
+  --text2-clr:black;
+  --navbar-text-clr:#fff;
   --hover-clr:red;
   --Livescore-btn-background:#ffffff;
-  --selected-btn-background:#32CF8A;
+  --selected-btn-background:#0f63e1;
   --selected-btn-clr:#ffffff;
-  --card-subbox-background:#EFF0F5;
+  --card-subbox-background:#09090b;
   // --para-clr:#fff;
   // --btn-bg-color:#5f99be;
   // --btn-text-color:#5f99be;
@@ -42,6 +47,7 @@
   --nav-bg-clr:#2647D6;
   --navbar-box-clr:#3A5AE5;
   --hover-clr:rgb(239, 237, 237);
+  --nevbar-submenu-hover-clr:rgb(239, 237, 237);
   --footer-background-color:#2647D6;
   --submenu-bg-clr:white;
   --submenu-text-clr:black;
@@ -50,7 +56,8 @@
   --carousel-matchStatus-text-clr: #777777;
   --carousel-text-clr: #000000;
   --home-card-background:#ffffff;
-  --text-clr: #ffffff;
+  --text-clr: black;
+  --navbar-text-clr:#ffffff;
   --text-clr2:rgb(139, 138, 138);
   --loading-btn-bg-clr:#16f494;
   --loading-btn-hover-bg-clr:#20b977;
@@ -71,6 +78,9 @@
   // --bg-clr:#ffffff;
   // --nav-hover-color:rgb(0, 42, 255);
   --bg-color:#EFF0F5; 
+  --text2-clr:black;
+
+  --carousel-bg-color:#EFF0F5; 
   // --card-clr:#FFFFFF;
   // --card-clr:linear-gradient(319deg, #dbf26e 0%, #61fa74 37%, #1cfdd6 100%);
 
